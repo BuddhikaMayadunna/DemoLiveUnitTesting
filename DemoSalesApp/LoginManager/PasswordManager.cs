@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace DemoSalesApp.LoginManager
 {
-    public class PasswordAdvisor
+    public class PasswordManager
     {
-        public enum PasswordScore
+        public enum PasswordStrengthScore
         {
             TooShort = 0,
             VeryWeak = 1,
@@ -19,17 +14,17 @@ namespace DemoSalesApp.LoginManager
             VeryStrong = 5
         }
 
-        public static PasswordScore CheckPasswordStrngth(string password)
+        public static PasswordStrengthScore EvaluatePasswordStrngth(string password)
         {
             int score = 0;
 
             if (password.Length < 1)
             {
-                return PasswordScore.TooShort;
+                return PasswordStrengthScore.TooShort;
             }
             if (password.Length < 4)
             {
-                return PasswordScore.VeryWeak;
+                return PasswordStrengthScore.VeryWeak;
             }
             if (password.Length >= 8)
             {
@@ -54,7 +49,7 @@ namespace DemoSalesApp.LoginManager
             {
                 score++;
             }
-            return (PasswordScore)score;
+            return (PasswordStrengthScore)score;
         }
 
         /* 
