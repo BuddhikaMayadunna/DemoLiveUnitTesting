@@ -8,17 +8,6 @@ https://medium.com/@buddhikamayadunna/unit-testing-with-visual-studio-2017-1551b
 
 You can use live unit testing features which have in visual studio 2017 as a productivity tool.
 
-
-        public enum PasswordStrengthScore
-        {
-            TooShort = 0,
-            VeryWeak = 1,
-            Weak = 2,
-            Medium = 3,
-            Strong = 4,
-            VeryStrong = 5
-        }
-
         public static PasswordStrengthScore EvaluatePasswordStrngth(string password)
         {
             int score = 0;
