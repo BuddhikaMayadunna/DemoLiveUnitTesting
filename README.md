@@ -1,4 +1,9 @@
 
+This project to demonstrate how to create unit test and basics of unit testing with visual studio 2017.
+
+This program is to evaluate the strength of the password and covered with basic unit tests. this sample program is a kind of guidance to start your own coding with unit testing with best practices.
+
+
         public enum PasswordStrengthScore
         {
             TooShort = 0,
