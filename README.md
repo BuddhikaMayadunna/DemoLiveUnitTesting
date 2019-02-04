@@ -1,7 +1,12 @@
+# Unit Testing with Visual Studio 2017
 
-This project to demonstrate how to create unit test and basics of unit testing with visual studio 2017.
+This project to demonstrate how to create basic unit test and how to start unit testing with visual studio 2017.This sample program is a kind of guidance to start your own coding with unit testing with best practices. 
 
-This program is to evaluate the strength of the password and covered with basic unit tests. this sample program is a kind of guidance to start your own coding with unit testing with best practices.
+Following program is to evaluate the strength of the password and how to get it covered with basic unit tests.
+You can find more information here.
+https://medium.com/@buddhikamayadunna/unit-testing-with-visual-studio-2017-1551b00de45a
+
+You can use live unit testing features which have in visual studio 2017 as a productivity tool.
 
 
         public enum PasswordStrengthScore
